@@ -1,3 +1,8 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get "notes" => "notes#index"
+  post "notes" => "notes#create"
+  get "notes/:id" => "notes#show"
+  post "notes/:index" => "notes#update"
+  post "update_index" => "notes#update_index"
+  delete "notes/:index" => "notes#destroy"
 end
